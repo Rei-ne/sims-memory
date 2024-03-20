@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "SimsSans";
+  src: url("./assets/fonts/Loucos-thesimssansbold.woff") format("woff");
+  font-weight: bold;
+}
+
+body {
+  font-family: "SimsSans", sans-serif;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  background: #1b1523;
+  color: #ffffff;
+}
