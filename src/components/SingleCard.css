@@ -1,5 +1,5 @@
 .card {
-  width: 180px;
+  position: relative;
 }
 
 .card img {
@@ -7,6 +7,33 @@
   display: block;
   border: 2px solid #ffffff;
   border-radius: 6px;
-  height: 180px;
   object-fit: cover;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  position: absolute;
+  height: 100%;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+}
+
+@media screen and (max-width: 465px) and (orientation: portrait) {
+  .card {
+    width: 100px;
+  }
+  .card img {
+    object-fit: cover;
+  }
+}
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
 }
